@@ -1,5 +1,4 @@
 class User {
-  // Constructor de la clase User
   User({
     this.idUser,
     this.name,
@@ -9,15 +8,13 @@ class User {
     this.updatedAt,
   });
 
-  // Atributos de la clase User
-  int? idUser; // Id del usuario
-  String? name; // Nombre del usuario
-  String? email; // Correo electrónico del usuario
-  String? level; // Nivel del usuario
-  String? createdAt; // Fecha de creación del usuario
-  String? updatedAt; // Fecha de actualización del usuario
+  int? idUser;
+  String? name;
+  String? email;
+  String? level;
+  String? createdAt;
+  String? updatedAt;
 
-  // Método factory para convertir un mapa (JSON) en una instancia de User
   factory User.fromJson(Map<String, dynamic> json) => User(
         idUser: json["id_user"] != null
             ? int.parse(json["id_user"].toString())
@@ -29,7 +26,6 @@ class User {
         updatedAt: json["updated_at"],
       );
 
-  // Método para convertir una instancia de User en un mapa (JSON)
   Map<String, dynamic> toJson() => {
         "id_user": idUser,
         "name": name,
@@ -39,4 +35,3 @@ class User {
         "updated_at": updatedAt,
       };
 }
-
