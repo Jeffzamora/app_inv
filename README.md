@@ -1,6 +1,6 @@
-# app_inv
+# farma search
 
-A new Flutter project.
+Proyecto de Inventario para una farmacia.
 
 ## Getting Started
 
